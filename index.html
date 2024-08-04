@@ -19,6 +19,10 @@
       <div></div>
       <div></div>
     </div>
+    <div class="leaf">
+      <div></div>
+      <div></div>
+    </div>
     <div class="glow"></div>
     <div class="rose-sepal">
       <div></div>
@@ -47,15 +51,15 @@
   </div>
   </div>
   <script>
-    document.getElementById('toggleButton').addEventListener('click', function() {
-      document.querySelector('.container').style.display = 'block';
-      document.querySelector('#toggleButton').style.display = 'none';
-  });
+      document.getElementById('toggleButton').addEventListener('click', function() {
+          document.querySelector('.container').style.display = 'block';
+          document.querySelector('#toggleButton').style.display = 'none';
+      });
 
-  const container = document.querySelector('.container');
-  container.addEventListener('animationend', () => {
-    container.classList.add('move');
-  });
+      const container = document.querySelector('.container');
+      container.addEventListener('animationend', () => {
+        container.classList.add('move');
+      });
   </script>
 </body>
 
