@@ -13,6 +13,8 @@ function setup() {
   x=100;
 
   t = 0.05;
+
+  document.body.style.touchAction = 'manipulation'; 
 }
 
 function draw() {
