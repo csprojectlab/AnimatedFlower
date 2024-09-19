@@ -54,5 +54,5 @@ function draw() {
 
 function touchStarted() {
   keepBeating = !keepBeating;
-  return false;
+  return true;
 }
