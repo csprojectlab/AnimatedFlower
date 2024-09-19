@@ -1,6 +1,7 @@
 var x;
 var y;
 var t;  // use this for text fluctuation.
+var keepBeating = true;
 
 function setup() {
   createCanvas(400, 400);
@@ -15,6 +16,7 @@ function setup() {
 }
 
 function draw() {
+  if (keepBeating){
     // Keep incrementing the value of x for beating animation.
     x+=0.3;
     
@@ -23,7 +25,7 @@ function draw() {
         x = 0.3
     
     y=3*(cos(x)+sin(x/2))+110;
-
+  }
     // setting background close to blue with a faint fluctuation with green color.
     background(0, y/3, y);
 
@@ -47,5 +49,10 @@ function draw() {
     pop()
 
     fill(255,255,255)
-    text("Created by Ari!!!", 10, 20)
+    text("Created by Ari!!!  Tap screen to stop & start", 10, 20)
+}
+
+function touchStarted() {
+  keepBeating = !keepBeating;
+  return false;
 }
