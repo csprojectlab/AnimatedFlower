@@ -14,7 +14,7 @@ let delayFrames = 25;
 
 // Load the image.
 function preload() {
-  img = loadImage("our.jpg");  
+  img = loadImage("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.etsy.com%2Fin-en%2Flisting%2F252184736%2Ftextured-art-pretty-painting-beautiful&psig=AOvVaw0whRRrz1kBRQ_K8MtGA-9Q&ust=1727152269369000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJiMq8me2IgDFQAAAAAdAAAAABAE");  
 }
 
 // Create canvas.
